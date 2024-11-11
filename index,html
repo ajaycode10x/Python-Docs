@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Learning Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#basics">Basics</a></li>
+                <li><a href="#methods">Methods</a></li>
+                <li><a href="#advanced">Advanced Topics</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Python Learning Guide</h1>
+        <p>This website will guide you through Python programming from basics to advanced topics.</p>
+    </section>
+
+    <section id="basics">
+        <h2>Python Basics</h2>
+        <div>
+            <h3>Python Syntax</h3>
+            <pre><code>print("Hello, World!")</code></pre>
+            <p>Explanation: This is the basic syntax to print a message in Python. It's the simplest Python program.</p>
+        </div>
+        <div>
+            <h3>Variables</h3>
+            <pre><code>x = 10</code></pre>
+            <p>Explanation: Variables are used to store data values in Python. In this example, x is assigned the value 10.</p>
+        </div>
+        <div>
+            <h3>Data Types</h3>
+            <pre><code>my_string = "Hello"
+my_int = 5
+my_float = 3.14</code></pre>
+            <p>Explanation: Python supports different data types, like strings, integers, and floats. You can store various types of values in variables.</p>
+        </div>
+    </section>
+
+    <section id="methods">
+        <h2>Python Methods</h2>
+        <div>
+            <h3>len() Method</h3>
+            <pre><code>my_list = [1, 2, 3, 4]
+print(len(my_list))</code></pre>
+            <p>Explanation: The len() method returns the length of an object like a list, string, or tuple.</p>
+        </div>
+        <div>
+            <h3>append() Method</h3>
+            <pre><code>my_list.append(5)</code></pre>
+            <p>Explanation: The append() method adds an element to the end of a list in Python.</p>
+        </div>
+        <div>
+            <h3>sorted() Method</h3>
+            <pre><code>my_list = [4, 2, 9, 1]
+sorted_list = sorted(my_list)
+print(sorted_list)</code></pre>
+            <p>Explanation: The sorted() method sorts the elements of a list in ascending order.</p>
+        </div>
+    </section>
+
+    <section id="advanced">
+        <h2>Advanced Python Topics</h2>
+        <div>
+            <h3>Lambda Functions</h3>
+            <pre><code>multiply = lambda x, y: x * y
+print(multiply(2, 3))</code></pre>
+            <p>Explanation: A lambda function is a small anonymous function that is defined using the keyword <code>lambda</code>.</p>
+        </div>
+        <div>
+            <h3>Decorators</h3>
+            <pre><code>def decorator_function(original_function):
+    def wrapper_function():
+        print("Wrapper executed this before {}".format(original_function.__name__))
+        return original_function()
+    return wrapper_function
+
+@decorator_function
+def display():
+    return "Display function executed."
+
+print(display())</code></pre>
+            <p>Explanation: Decorators are a powerful tool in Python to modify the behavior of a function.</p>
+        </div>
+        <div>
+            <h3>Generators</h3>
+            <pre><code>def my_generator():
+    yield 1
+    yield 2
+    yield 3
+
+for value in my_generator():
+    print(value)</code></pre>
+            <p>Explanation: Generators are functions that return an iterable set of items, one at a time, using the <code>yield</code> statement.</p>
+        </div>
+        <div>
+            <h3>List Comprehension</h3>
+            <pre><code>squares = [x**2 for x in range(10)]
+print(squares)</code></pre>
+            <p>Explanation: List comprehensions provide a concise way to create lists in Python, often used for filtering and applying an operation to each item.</p>
+        </div>
+    </section>
+
+    <section id="resources">
+        <h2>External Resources</h2>
+        <p>For in-depth Python documentation and additional learning, visit the following resources:</p>
+        <ul>
+            <li><a href="https://docs.python.org/3/" target="_blank">Python Official Documentation</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" target="_blank">MDN Web Docs - JavaScript Reference</a></li>
+            <li><a href="https://realpython.com/" target="_blank">Real Python</a></li>
+            <li><a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">GeeksforGeeks - Python Programming</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Created by Ajay</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
