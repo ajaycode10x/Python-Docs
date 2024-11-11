@@ -123,6 +123,10 @@ print(squares)</code></pre>
     <footer>
         <p>Created by Ajay</p>
     </footer>
+<!-- Scroll to top button -->
+<button id="topBtn" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Top
+</button>
 
     <script src="script.js"></script>
 </body>
